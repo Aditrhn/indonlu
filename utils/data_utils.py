@@ -505,7 +505,7 @@ class DocumentSentimentDataset(Dataset):
     # Static constant variable
     LABEL2INDEX = {'negative': 0, 'positive': 1}
     INDEX2LABEL = {0: 'negative', 1: 'negative'}
-    NUM_LABELS = 3
+    NUM_LABELS = 2
     
     def load_dataset(self, path): 
         df = pd.read_csv(path, sep='\t', header=None)
